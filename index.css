@@ -1,0 +1,116 @@
+.container {
+  width: 700px;
+  height: 500px;
+}
+
+p {
+  font-family: "Chakra Petch", sans-serif;
+}
+img {
+  margin-top: 8px;
+  width: 500px;
+  height: 450px;
+}
+.body-header {
+  text-align: center;
+  color: white;
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+.carousel-item .carousel-caption {
+  font-size: 18px;
+  color: white;
+}
+
+.navbar {
+  height: 70px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 18px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.navbar-brand img {
+  height: 58px;
+  width: 50px;
+}
+.sidebar-menu {
+  position: fixed;
+  width: 60px;
+  margin-top: 300px;
+  transition: all 0.3s linear;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-menu ul {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+.sidebar-menu li {
+  height: 45px;
+  position: relative;
+}
+.sidebar-menu li a {
+  color: #fff !important;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 45px;
+  padding-left: 25%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  transition: all 0.3s linear;
+  text-decoration: none !important;
+}
+.sidebar-menu li:nth-child(1) a {
+  background: #4267b2;
+}
+.sidebar-menu li:nth-child(2) a {
+  background: #1da1f2;
+}
+.sidebar-menu li:nth-child(3) a {
+  background: #e1306c;
+}
+.sidebar-menu li:nth-child(4) a {
+  background: #333;
+}
+.sidebar-menu li:nth-child(5) a {
+  background: #ff0000;
+}
+.sidebar-menu li a i {
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-size: 15px;
+}
+.sidebar-ul li a span {
+  display: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.sidebar-menu .sidebar-ul a:hover {
+  z-index: 1;
+  width: 200px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.sidebar-ul li:hover a span {
+  padding-left: 30%;
+  display: block;
+  font-size: 15px;
+}
+.paragraph {
+  margin-top: 8px;
+  font-size: 18px;
+}
