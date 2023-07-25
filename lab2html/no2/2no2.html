@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container .container-item {
+        padding: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="border: solid black 1px">
+      <form action="">
+        <h2>แบบฟอร์มจองทัวร์</h2>
+        <div class="container-item" style="border: solid black 1px">
+          ข้อมูลทั่วไป <br />
+          <label for="name"
+            >ชื่อ-สกุล: <br />
+            <input
+              type="text"
+              name="name"
+              placeholder="กรอกชื่อ-สกุล"
+              required /><br
+          /></label>
+
+          <label for="email"
+            >Email: <br />
+            <input type="email" name="email" required /><br
+          /></label>
+          <label for="tel"
+            >โทรศัพท์: <br />
+            <input
+              type="text"
+              id="phoneNumber"
+              name="phoneNumber"
+              pattern="^\+66\d{9}$"
+              required />
+            <br
+          /></label>
+          <label for="address">
+            ที่อยู่: <br />
+            <textarea name="address" id="" cols="45" rows="5"></textarea>
+            <br
+          /></label>
+          <label for="paisanee">
+            รหัสไปรษณีย์:
+            <input type="text" size="5" pattern="\d{5}+" />
+            <br
+          /></label>
+          <label for="pic">รูปผู้จอง: <input type="file" /></label>
+        </div>
+        <div class="container-item" style="border: solid black 1px">
+          ข้อมูลเข้าสู่ระบบ <br />
+          <label for="Username">
+            Username: <br />
+            <input type="text" pattern="^[a-zA-Z0-9_]{8,}$" />
+            <br />
+            ประกอบด้วยตัวเลขตัวอักษรหรือ_ตั้งแต่8ตัวขึ้นไป <br />
+          </label>
+          <label for="Password">
+            Password: <br />
+            <input type="text" pattern="^.{8,}$" />
+            <br />
+            ประกอบด้วยอักขระอะไรก็ตั้งแต่ 8 ตัวขึ้นไป
+          </label>
+        </div>
+        <div class="container-item" style="border: solid black 1px">
+          <label for="packageTour">
+            แพ็คเก็จทัวร์:
+            <select name="packageTour">
+              <option value="" disabled selected>--select--</option>
+              <option value="Thailand">a</option>
+              <option value="Thailand">b</option>
+              <option value="Thailand">c</option>
+              <option value="Thailand">d</option>
+              <option value="Thailand">e</option>
+            </select>
+          </label>
+          <br />
+
+          <label for="selectDay">
+            วันที่เดินทาง:
+            <input type="date" />
+          </label>
+          <br />
+          <label for="travelistAmount">
+            จำนวนผู้เดินทาง
+            <input type="text" pattern="([0-9]+|[10])" />
+          </label>
+          <br />
+          <label for="">
+            เน้นการท่องเที่ยวแบบใด <br />
+            <input type="checkbox" name="shopping" value="" />ช็อปปิ้ง
+            <br />
+            <input type="checkbox" name="nature" value="" />ธรรมชาติ
+            <br />
+            <input type="checkbox" name="sea" value="" />ทะเล
+          </label>
+        </div>
+        <div class="container-item">
+          <label for="submit-label">
+            ยอมรับเงื่อนไขและข้อตกลง
+            <input type="radio" name="agree" id="agree" checked="checked" />I
+            agree <input type="radio" name="disagree" id="disagree" />I disagree
+            <input type="submit" value="จอง" />
+          </label>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

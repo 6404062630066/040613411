@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 248px;
+      }
+      .top {
+        display: flex;
+        flex-direction: row;
+
+        border: 1px solid #000;
+      }
+
+      .mid {
+        border: 1px solid #000;
+      }
+      .submit-button {
+        margin-top: 10px;
+        background-image: url("https://e7.pngegg.com/pngimages/569/263/png-clipart-computer-icons-button-encapsulated-postscript-button-text-logo.png");
+        background-size: cover;
+        background-position: center;
+        width: 100px;
+        height: 40px;
+        background-color: #007bff;
+        color: #fff;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .top-item {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>เข้าสู่ระบบ</h1>
+
+    <div class="container">
+      <form action="2no3logoutpage.html">
+        <div class="top">
+          <div class="top-left">
+            <div class="top-item">Username</div>
+            <div class="top-item">Password</div>
+          </div>
+          <div class="top-right">
+            <input type="text" required autofocus />
+            <br />
+            <input type="text" required />
+          </div>
+        </div>
+
+        <div class="mid">
+          กรุณาพิมพ์ตามตัวเลขที่ปรากฎ<br />
+          1559 <br />
+          <input type="text" pattern="^1559$" />
+        </div>
+
+        <input type="submit" class="submit-button" value="" />
+      </form>
+    </div>
+  </body>
+</html>
