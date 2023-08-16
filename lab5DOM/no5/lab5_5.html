@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = () => {
+        getData = document.querySelector("form");
+        getData.onsubmit = addData;
+      };
+      addData = () => {
+        event.preventDefault(); // Prevent form submission
+        var name = document.getElementById("name");
+        var name = name.value;
+
+        var address = document.getElementById("address");
+        var address = address.value;
+
+        var tel = document.getElementById("tel");
+        var tel = tel.value;
+
+        var table = document.querySelector("table");
+
+        var tr = document.createElement("tr");
+
+        var tdName = document.createElement("td");
+        tdName.innerHTML = name;
+        tr.appendChild(tdName);
+
+        var tdAddress = document.createElement("td");
+        tdAddress.innerHTML = address;
+        tr.appendChild(tdAddress);
+
+        var tdTel = document.createElement("td");
+        tdTel.innerHTML = tel;
+        tr.appendChild(tdTel);
+
+        table.appendChild(tr);
+      };
+    </script>
+  </head>
+  <body>
+    <form>
+      <label>
+        ชื่อลูกค้า:
+        <input id="name" type="text" placeholder="ชื่อ" />
+      </label>
+      <br />
+      <label>
+        ที่อยู่:
+        <input id="address" type="text" placeholder="ที่อยู่" />
+      </label>
+      <br />
+      <label>
+        โทรศัพท์:
+        <input id="tel" type="text" placeholder="โทรศัพท์" />
+      </label>
+      <br />
+      <input type="submit" value="เพิ่ม" />
+    </form>
+    <table border="1">
+      <tr>
+        <th>ชื่อลูกค้า</th>
+        <th>ที่อยู่</th>
+        <th>เบอร์โทรศัพท์</th>
+      </tr>
+    </table>
+  </body>
+</html>
